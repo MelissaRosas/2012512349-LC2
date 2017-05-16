@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _2012512349_PER.EntytiTypeConfiguration
 {
-    class EmpleadoConfiguration
+    class EmpleadoConfiguration : EntityTypeConfiguration<Empleado>
     {
+        public EmpleadoConfiguration()
+        {
+            //Table Configurations
+
+            ToTable("Empleados");
+
+            // creacion primary key
+
+            HasKey(a => a.EmpleadoId);
+        }
     }
 }

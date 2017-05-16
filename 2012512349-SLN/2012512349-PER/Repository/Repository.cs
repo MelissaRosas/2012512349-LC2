@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace _2012512349_PER.Repository
 {
-    public class Repository 
+    public class Repository : IRepository
+
     {
     }
 }

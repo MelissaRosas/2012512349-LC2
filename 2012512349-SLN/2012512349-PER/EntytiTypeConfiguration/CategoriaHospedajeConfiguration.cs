@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _2012512349_PER.EntytiTypeConfiguration
 {
-    class CategoriaHospedajeConfiguration
+    class CategoriaHospedajeConfiguration : EntityTypeConfiguration<CategoriaHospedaje>
     {
+        public CategoriaHospedajeConfiguration()
+        {
+            //Table Configurations
+
+            ToTable("CategoriasHospedajes");
+
+            // creacion primary key
+
+            HasKey(a => a.CategoriaHospedajeId);
+        }
     }
 }

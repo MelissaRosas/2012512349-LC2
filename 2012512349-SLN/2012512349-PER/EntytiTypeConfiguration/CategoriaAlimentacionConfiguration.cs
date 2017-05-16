@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace _2012512349_PER.EntytiTypeConfiguration
 {
-    class CategoriaAlimentacionConfiguration
+    class CategoriaAlimentacionConfiguration : EntityTypeConfiguration<CategoriaAlimentacion>
     {
-    }
+        public CategoriaAlimentacionConfiguration()
+        {
+            //Table Configurations
+
+            ToTable("CategoriasAlimentaciones");
+
+            // creacion primary key
+
+            HasKey(a => a.CategoriaAlimentacionId);
+        }
+
+private void ToTable(string p)
+{
+ 	throw new NotImplementedException();
 }
+    }
+}}

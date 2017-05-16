@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _2012512349_PER.EntytiTypeConfiguration
 {
-    class MedioPagoConfiguration
+    class MedioPagoConfiguration : EntityTypeConfiguration<MedioPago>
     {
+        public MedioPagoConfiguration()
+        {
+            //Table Configurations
+
+            ToTable("MediosPagos");
+
+            // creacion primary key
+
+            HasKey(a => a.MedioPagoId);
+        }
     }
 }
