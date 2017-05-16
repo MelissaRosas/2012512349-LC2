@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2012512349_PER.Repository
 {
-    class HospedajeRepository
+    public class HospedajeRepository : Repository ,
     {
     }
 }

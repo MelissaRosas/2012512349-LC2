@@ -73,7 +73,15 @@
     <Compile Include="Repository\EmpleadoRepository.cs" />
     <Compile Include="Repository\HospedajeRepository.cs" />
     <Compile Include="Repository\MedioPagoRepository.cs" />
+    <Compile Include="Repository\PaqueteRepository.cs" />
+    <Compile Include="Repository\PersonaRepository.cs" />
     <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Repository\ServicioHospedajeRepository.cs" />
+    <Compile Include="Repository\ServicioTuristicoRepository.cs" />
+    <Compile Include="Repository\TipoComprobanteRepository.cs" />
+    <Compile Include="Repository\TipoHospedajeRepository.cs" />
+    <Compile Include="Repository\TipoTransporteRepository.cs" />
+    <Compile Include="Repository\TransporteRepository.cs" />
     <Compile Include="Repository\VentaPaqueteRepository.cs" />
   </ItemGroup>
   <ItemGroup />
