@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace _2012512349_ENT.Entities
 {
-    class CategoriaTransporte
+    public class CategoriaTransporte
     {
+        public int CategoriaTransporteId { get; set; }
     }
 }
