@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2012512349_ENT.IRepositories
 {
-    interface IMedioPagoRepository
+   public interface IMedioPagoRepository : IRepository
     {
     }
 }

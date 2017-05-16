@@ -63,6 +63,18 @@
     <Compile Include="EntytiTypeConfiguration\TransporteConfiguration.cs" />
     <Compile Include="EntytiTypeConfiguration\VentaPaqueteConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AlimentacionRepository.cs" />
+    <Compile Include="Repository\CalificacionHospedajeRepository.cs" />
+    <Compile Include="Repository\CategoriaAlimentacionRepository.cs" />
+    <Compile Include="Repository\CategoriaHospedajeRepository.cs" />
+    <Compile Include="Repository\CategoriaTransporteRepository.cs" />
+    <Compile Include="Repository\ClienteRepository.cs" />
+    <Compile Include="Repository\ComprobantePagoRepository.cs" />
+    <Compile Include="Repository\EmpleadoRepository.cs" />
+    <Compile Include="Repository\HospedajeRepository.cs" />
+    <Compile Include="Repository\MedioPagoRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Repository\VentaPaqueteRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

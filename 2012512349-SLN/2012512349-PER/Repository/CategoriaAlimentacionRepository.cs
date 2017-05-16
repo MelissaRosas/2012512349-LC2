@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2012512349_ENT.IRepositories
+namespace _2012512349_PER.Repository
 {
-    public class IClienteRepository : IRepository
+    class CategoriaAlimentacionRepository
     {
     }
 }

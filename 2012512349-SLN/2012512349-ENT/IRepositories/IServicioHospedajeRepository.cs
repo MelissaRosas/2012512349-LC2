@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _2012512349_ENT.IRepositories
 {
-    interface IServicioHospedajeRepository
+  public  interface IServicioHospedajeRepository : IRepository
     {
     }
 }
