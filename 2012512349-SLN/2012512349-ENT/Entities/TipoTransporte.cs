@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _2012512349_ENT.Entities
 {
-    class TipoTransporte
+    public class TipoTransporte
     {
+
+        public TipoTransporte(String nom)
+        {
+            nombre = nom;
+        }
+
+        public int codigo { get; set; }
+        public String nombre { get; set; }
+        public String descripcion { get; set; }
+
     }
 }

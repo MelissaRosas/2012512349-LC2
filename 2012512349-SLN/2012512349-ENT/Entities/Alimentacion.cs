@@ -8,14 +8,17 @@ namespace _2012512349_ENT.Entities
 {
     public class Alimentacion : ServicioTuristico
     {
-        public int AlimentacionId { get; set; }
-        public string NombreEstablecimiento { get; set; }
-        public CategoriaAlimentacion Categoria { get; set; }
 
-
-        public Alimentacion()
+        public Alimentacion(CategoriaAlimentacion categoria, double precio)
         {
-            Categoria = new CategoriaAlimentacion();
+            categoriaAlimentacion = categoria;
+            this.precio = precio;
         }
-    }
+
+        public int codigo { get; set; }
+        public CategoriaAlimentacion categoriaAlimentacion { get; set; }
+        public double precio { get; set; }
+ 
+        
+}
 }

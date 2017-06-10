@@ -8,17 +8,21 @@ namespace _2012512349_ENT.Entities
 {
     public class Transporte : ServicioTuristico
     {
-        public int TransporteId { get; set; }
-        public string NombreEmpresa { get; set; }
-        public TipoTransporte Tipo { get; set; }
-        public CategoriaTransporte Categoria { get; set; }
 
-        public Transporte()
+        public Transporte(TipoTransporte tip, CategoriaTransporte cat, double pre)
         {
-            Tipo = new TipoTransporte();
-            Categoria = new CategoriaTransporte();
+            tipoTransporte = tip;
+            categoriaTransporte = cat;
+            precio = pre;
+        }
 
-
+        public int codigo { get; set; }
+        public TipoTransporte tipoTransporte { get; set; }
+        public CategoriaTransporte categoriaTransporte { get; set; }
+        public double precio { get; set; }
+        public override double obtenerPrecio()
+        {
+            return precio;
         }
 
     }

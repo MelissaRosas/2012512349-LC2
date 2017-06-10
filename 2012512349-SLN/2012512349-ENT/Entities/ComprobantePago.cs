@@ -8,6 +8,8 @@ namespace _2012512349_ENT.Entities
 {
      public class ComprobantePago
     {
+        internal double monto;
+
         public int TipoComprobanteId { get; set; }
         public TipoComprobante TipoComprobante { get; set; }
         
@@ -16,4 +18,5 @@ namespace _2012512349_ENT.Entities
             TipoComprobante = new TipoComprobante();
         }
     }
+
  } 

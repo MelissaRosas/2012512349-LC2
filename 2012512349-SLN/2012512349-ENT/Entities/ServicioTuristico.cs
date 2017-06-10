@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace _2012512349_ENT.Entities
 {
-    public class ServicioTuristico
+    public abstract class ServicioTuristico
     {
-        public int ServicioTuristicoId { get; set; }
-        public string NombreServicio { get; set; }
+        /*
+        public ServicioTuristico() {
+            // Code to initialize the class goes here.
+        }*/
+
+        // abstract public void Wash();
+        // abstract public void Rinse(int loadSize);
+        abstract public double obtenerPrecio();
+
     }
 }

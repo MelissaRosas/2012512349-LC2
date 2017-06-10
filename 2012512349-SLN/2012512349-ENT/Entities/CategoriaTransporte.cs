@@ -8,6 +8,15 @@ namespace _2012512349_ENT.Entities
 {
     public class CategoriaTransporte
     {
-        public int CategoriaTransporteId { get; set; }
+
+        public CategoriaTransporte(String nombre)
+        {
+            this.nombre = nombre;
+        }
+
+        public int codigo { get; set; }
+        public String nombre { get; set; }
+        public String descripcion { get; set; }
+
     }
 }

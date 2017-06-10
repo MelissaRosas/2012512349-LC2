@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace _2012512349_ENT.Entities
 {
-    public class Empleado : Persona
+    
+    public class Empleado
     {
-        public int EmpleadoId { get; set; }
+
+        public Empleado(Persona persona, double sueldo)
+        {
+            this.persona = persona;
+            this.sueldo = sueldo;
+        }
+
+        public int codigo { get; set; }
+        // Referencia a la clase persona. Evita redundancia de atributos.
+        public Persona persona { get; set; }
+        public double sueldo { get; set; }
+
     }
 }

@@ -8,7 +8,20 @@ namespace _2012512349_ENT.Entities
 {
     public class TipoComprobante
     {
-        public int TipoComprobanteId { get; set; }
-    }
+        public TipoComprobante()
+        {
+        }
 
+        public TipoComprobante(String nom, char abrev)
+        {
+            nombre = nom;
+            abreviatura = abrev;
+        }
+
+        public int codigo { get; set; }
+        public String nombre { get; set; }
+        // Factura -> F / Boleta -> B
+        public char abreviatura { get; set; }
+
+    }
 }

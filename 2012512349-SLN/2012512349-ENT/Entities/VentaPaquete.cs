@@ -8,29 +8,49 @@ namespace _2012512349_ENT.Entities
 {
     public class VentaPaquete
     {
-        public Paquete Paquete { get; set; }
-        public MedioPago MedioPago { get; set; }
-        public ComprobantePago Comprobante { get; set; }
 
-        public Empleado Empleado { get; set; }
-        public Cliente Cliente { get; set; }
-
-
-        public VentaPaquete()
+        public VentaPaquete(Cliente clie, Paquete paq, ComprobantePago comp, MedioPago med, Empleado emp, DateTime fec)
         {
-            Paquete = new Paquete();
-            MedioPago = new MedioPago();
-            Comprobante = new ComprobantePago();
+            cliente = clie;
+            paquete = paq;
+            comprobantePago = comp;
+            medioPago = med;
+            empleado = emp;
+            fecha = fec;
         }
 
-        public VentaPaquete(Empleado empleado, Cliente cliente)
+        public int codigo { get; set; }
+        public Cliente cliente { get; set; }
+        // Se vende 1 paquete a la vez.
+        public Paquete paquete { get; set; }
+        public ComprobantePago comprobantePago { get; set; }
+        public MedioPago medioPago { get; set; }
+        // Empleado que realiza la venta.
+        public Empleado empleado { get; set; }
+        public DateTime fecha { get; set; }
+        public double montoTotal
         {
-            Empleado = empleado;
-            Cliente = cliente;
-
-            Paquete = new Paquete();
-            MedioPago = new MedioPago();
-            Comprobante = new ComprobantePago();
+            get
+            {
+                return paquete.calcularPrecioTotal(); ;
+            }
+            set
+            {
+                // Asignamos el mismo monto al comprobante de la venta actual.
+                montoTotal = paquete.calcularPrecioTotal();
+                comprobantePago.monto = paquete.calcularPrecioTotal();
+            }
         }
+
+        public String reporte()
+        {
+            String reporte = "";
+            reporte += "Cliente: " + cliente.persona.nombreCompleto() + "\n";
+            reporte += "Empleado responsable: " + empleado.persona.nombreCompleto() + "\n";
+            reporte += "Fecha: " + fecha + "\n";
+            reporte += "Monto Total del Paquete: S/. " + montoTotal + "\n";
+            return reporte;
+        }
+
     }
 }
