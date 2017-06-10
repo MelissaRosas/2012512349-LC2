@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace _2012512349_ENT.IRepositories
 {
-    public interface ITransporteRepository : IRepository
+    public interface ITransporteRepository 
+
     {
     }
 }

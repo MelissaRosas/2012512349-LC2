@@ -22,7 +22,6 @@ namespace _2012512349_ENT.Entities
         public String nombre { get; set; }
         // Factura -> F / Boleta -> B
         public char abreviatura { get; set; }
-
-    }
+            }
 }
 

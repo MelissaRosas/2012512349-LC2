@@ -18,7 +18,10 @@ namespace _2012512349_ENT.Entities
         public int codigo { get; set; }
         public CategoriaAlimentacion categoriaAlimentacion { get; set; }
         public double precio { get; set; }
- 
-        
-}
+
+        public override double obtenerPrecio()
+        {
+            throw new NotImplementedException();
+        }
+    }
 }
